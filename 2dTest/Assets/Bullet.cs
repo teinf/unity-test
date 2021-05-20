@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Bullet : MonoBehaviour
 {
-    float speed = 0f;
+    float speed = 1f;
     float lifeTime = 10f;
     Vector2 moveDir = new Vector2();
     Rigidbody2D rb;
@@ -52,5 +52,5 @@ public class Bullet : MonoBehaviour
 
         sr.color = new Color(r, g, b);
     }
-
+    // BeesQ tu by³ :3
 }
