@@ -17,10 +17,6 @@ public class ShootingController : MonoBehaviour
         public Vector2 shootingPoint;
     }
 
-    private void Start()
-    {
-        float shootingCooldown = delay;
-    }
     void Update()
     {
         if (Input.GetKey(KeyCode.Mouse0))

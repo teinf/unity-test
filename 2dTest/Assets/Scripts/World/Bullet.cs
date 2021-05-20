@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Bullet : MonoBehaviour
 {
-    float speed = 10f;
+    float speed = 20f;
     float lifeTime = 10f;
     Vector2 moveDir = new Vector2();
     Rigidbody2D rb;

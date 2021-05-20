@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootingPoint: {fileID: 331770033}
-  delay: 0.01
+  delay: 0.2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +511,14 @@ PrefabInstance:
       propertyPath: m_UseFullKinematicContacts
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 966413452498327674, guid: d5045fa74783274409d6d02d3798eb24, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 966413452498327674, guid: d5045fa74783274409d6d02d3798eb24, type: 3}
+      propertyPath: objectToFollow
+      value: 
+      objectReference: {fileID: 415927304}
     - target: {fileID: 1234163598331060888, guid: d5045fa74783274409d6d02d3798eb24, type: 3}
       propertyPath: m_RootOrder
       value: 2
