@@ -8,25 +8,24 @@ public class ShootingController : MonoBehaviour
     public Transform shootingPoint;
 
     public float delay = 0.5f;
-    float timeBetweenSpawn = 0;
+    float shootingCooldown = 0;
 
     private void Start() {
-
-        float timeBetweenSpawn = delay;
+        float shootingCooldown = delay;
     }
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.Mouse0))
         {
-            if (timeBetweenSpawn <= 0) {
+            if (shootingCooldown <= 0) {
                 GameObject newBullet = Instantiate(bullet, shootingPoint.position, Quaternion.identity);
                 Bullet blt = newBullet.GetComponent<Bullet>();
                 Vector2 bltMoveDir = (Vector2)newBullet.transform.position - (Vector2)transform.position;
                 blt.Setup(bltMoveDir.normalized);
-                timeBetweenSpawn = delay;
+                shootingCooldown = delay;
             }
-            timeBetweenSpawn -= Time.deltaTime;
+            shootingCooldown -= Time.deltaTime;
         }
     }
 }
