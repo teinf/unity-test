@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8948970653755644290}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,10 +120,10 @@ GameObject:
   - component: {fileID: 1234163598331060888}
   - component: {fileID: 5912056061980217418}
   - component: {fileID: 420712688982680690}
-  - component: {fileID: 2387346033812006290}
+  - component: {fileID: 6965553020132166581}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,7 +166,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1234163598331060903}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -177,7 +177,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2387346033812006290
+--- !u!114 &6965553020132166581
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,8 +186,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1234163598331060903}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c32cf99854ee6704c948201b5dc6cc58, type: 3}
+  m_Script: {fileID: 11500000, guid: 688b7e7501199f6439a7e85f440ca586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToFollow: {fileID: 3164578395731325946, guid: 3c891357dd8245b4a8adbea4f09ae622, type: 3}
-  speed: 1
+  speed: 20
