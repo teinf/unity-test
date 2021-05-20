@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Bullet : MonoBehaviour
 {
-    float speed = 1f;
+    float speed = 10f;
     float lifeTime = 10f;
     Vector2 moveDir = new Vector2();
     Rigidbody2D rb;
@@ -52,6 +52,14 @@ public class Bullet : MonoBehaviour
 
         sr.color = new Color(r, g, b);
     }
-    // BeesQ tu byl :3 //poprawione ~Nitrej
-    // Nitrej tez
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out IDamageable damageable))
+        {
+            damageable.TakeDamage(1);
+            this.Die();
+        }
+
+    }
 }
