@@ -24,4 +24,9 @@ public class Player : MonoBehaviour
         float newY = (transform.position.y + moveDirection.y * movementSpeed * Time.deltaTime);
         rb.MovePosition(new Vector2(newX, newY));
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Destroy(gameObject);
+    }
 }
