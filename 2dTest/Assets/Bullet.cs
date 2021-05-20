@@ -52,5 +52,6 @@ public class Bullet : MonoBehaviour
 
         sr.color = new Color(r, g, b);
     }
-    // BeesQ tu by³ :3
+    // BeesQ tu byl :3 //poprawione ~Nitrej
+    // Nitrej tez
 }
