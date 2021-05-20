@@ -52,5 +52,5 @@ public class Bullet : MonoBehaviour
 
         sr.color = new Color(r, g, b);
     }
-
+    // BeesQ tu by³ :3
 }
